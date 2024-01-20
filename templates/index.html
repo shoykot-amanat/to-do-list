@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My TO DO List</title>
+    </head>
+
+    <body>
+        <h1>ToDos</h1>
+        <ul>
+            {% for todo in todos %}
+                <li> {{ todo['todo'] }} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
