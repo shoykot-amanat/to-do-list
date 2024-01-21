@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>My TO DO List</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
     </head>
 
     <body>
@@ -20,7 +21,7 @@
         </ul>
         <form action="{{ url_for('add') }}" method="post">
             <input type="text" name="todo">
-            <button type="submit">Add todo</button>
+            <button type="submit" class="button">Add todo</button>
 
         </form>
     </body>
